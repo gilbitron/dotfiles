@@ -8,6 +8,7 @@ module.exports = {
     backgroundColor: 'rgba(23, 52, 72, 0.8)',
     borderColor: 'rgb(16, 50, 76)',
     copyOnSelect: true,
+    shell: '/bin/zsh',
     colors: {
       black: '#000000',
       red: '#ff0000',
