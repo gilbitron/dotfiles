@@ -1,5 +1,5 @@
 # Composer
-export PATH="~/.composer/vendor/bin:$PATH"
+export PATH="/Users/gilbitron/.composer/vendor/bin:$PATH"
 # Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
