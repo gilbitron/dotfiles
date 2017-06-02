@@ -1,6 +1,6 @@
 module.exports = {
   config: {
-    fontSize: 14,
+    fontSize: 15,
     fontFamily: '"Source Code Pro for Powerline", Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
     cursorColor: '#f1d000',
     cursorShape: 'BEAM',
@@ -40,6 +40,7 @@ module.exports = {
     'hyper-simple-vibrancy',
     'hyper-simple-highlight-active-session',
     'hyper-statusline',
+    'hyper-snazzy',
   ],
 
   // in development, you can create a directory under
