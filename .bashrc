@@ -2,32 +2,18 @@
 export PATH="/Users/gilbitron/.composer/vendor/bin:$PATH"
 # Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+# Python
+export PATH="/Users/gilbitron/Library/Python/2.7/bin:$PATH"
 
-# -------
-# Aliases
-# -------
-alias cp="cp -iv"                                   # Preferred "cp" implementation
-alias mv="mv -iv"                                   # Preferred "mv" implementation
-alias mkdir="mkdir -pv"                             # Preferred "mkdir" implementation
-alias ll="ls -FGlAhp"                               # List all files in current directory in long list format
-alias ldir="ls -al | grep ^d"                       # List all directories in current directory in long list format
-alias cd..="cd ../"                                 # Go back 1 directory level (for fast typers)
-alias ..="cd ../"                                   # Go back 1 directory level
-alias ...="cd ../../"                               # Go back 2 directory levels
-alias .3="cd ../../../"                             # Go back 3 directory levels
-alias .4="cd ../../../../"                          # Go back 4 directory levels
-alias .5="cd ../../../../../"                       # Go back 5 directory levels
-alias .6="cd ../../../../../../"                    # Go back 6 directory levels
-alias f="open ."                                    # f:         Open the current directory in Finder
-alias ~="cd ~"                                      # ~:         Go Home
-alias c="clear"                                     # c:         Clear terminal display
-alias flushdns="sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder;" # flushdns: Flush DNS (Yosemite)
-alias ip="curl icanhazip.com"                       # ip:        Your public IP address
-alias ut="uptime"                                   # ut:        Computer uptime
-alias numfiles="echo $(ls -1 | wc -l)"              # numfiles:  Count of non-hidden files in current dir
-alias edithosts="sudo nano /etc/hosts"              # edithosts: Edit /etc/hosts file
-mcd () { mkdir -p "$1" && cd "$1"; }                # mcd:       Makes new dir and jumps inside
-alias homestead='function __homestead() { (cd ~/Homestead && vagrant $*); unset -f __homestead; }; __homestead' # homestead: Vagrant shortcut
+# Load aliases
+if [ -f ~/.bash_aliases ]; then
+. ~/.bash_aliases
+fi
+
+# makes new dir and jumps inside
+mcd () { 
+    mkdir -p "$1" && cd "$1"; 
+}                
 
 # display useful host related informaton
 ii() {
@@ -52,10 +38,4 @@ gitmd() {
 gitpurge() {
     git checkout develop
     git branch --merged | grep -v "\*" | grep -v "master" | xargs -n 1 git branch -d
-}
-
-# DB statusboard
-rundbs() {
-   cd ~/Documents/db-statusboard
-   docker-compose up -d
 }
