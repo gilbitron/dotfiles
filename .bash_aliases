@@ -23,3 +23,4 @@ alias wifidnsclear="networksetup -setdnsservers Wi-Fi empty"      # Clear WiFi D
 
 # Laravel
 alias homestead='function __homestead() { (cd ~/Homestead && vagrant $*); unset -f __homestead; }; __homestead' # homestead: Vagrant shortcut
+alias artisan="php artisan"
