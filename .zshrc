@@ -82,3 +82,6 @@ source $ZSH/oh-my-zsh.sh
 if [ -f ~/.bashrc ]; then
    source ~/.bashrc
 fi
+
+autoload -U promptinit; promptinit
+prompt pure
