@@ -20,6 +20,7 @@ alias numfiles="echo $(ls -1 | wc -l)"              # numfiles:  Count of non-hi
 alias edithosts="sudo nano /etc/hosts"              # edithosts: Edit /etc/hosts file
 alias wifidns="networksetup -setdnsservers Wi-Fi 8.8.8.8 8.8.1.1" # Set WiFi DNS to Google DNS servers
 alias wifidnsclear="networksetup -setdnsservers Wi-Fi empty"      # Clear WiFi DNS
+alias dirsize="du -sh" # Show the size of a file/directory
 
 # Laravel
 alias homestead='function __homestead() { (cd ~/Homestead && vagrant $*); unset -f __homestead; }; __homestead' # homestead: Vagrant shortcut
