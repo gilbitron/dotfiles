@@ -25,3 +25,6 @@ alias dirsize="du -sh" # Show the size of a file/directory
 # Laravel
 alias homestead='function __homestead() { (cd ~/Homestead && vagrant $*); unset -f __homestead; }; __homestead' # homestead: Vagrant shortcut
 alias artisan="php artisan"
+
+#Gulp
+alias gw="gulp watch"
