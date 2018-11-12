@@ -11,9 +11,9 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 # makes new dir and jumps inside
-mcd () { 
-    mkdir -p "$1" && cd "$1"; 
-}                
+mcd() {
+    mkdir -p "$1" && cd "$1"
+}
 
 # display useful host related informaton
 ii() {
