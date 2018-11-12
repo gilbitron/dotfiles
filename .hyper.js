@@ -37,7 +37,6 @@ module.exports = {
   //   `project#1.0.1`
   plugins: [
     'hypercwd',
-    'hyper-simple-vibrancy',
     'hyper-simple-highlight-active-session',
     'hyper-statusline',
     'hyper-snazzy',
