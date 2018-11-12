@@ -21,6 +21,7 @@ alias edithosts="sudo nano /etc/hosts"              # edithosts: Edit /etc/hosts
 alias wifidns="networksetup -setdnsservers Wi-Fi 8.8.8.8 8.8.1.1" # Set WiFi DNS to Google DNS servers
 alias wifidnsclear="networksetup -setdnsservers Wi-Fi empty"      # Clear WiFi DNS
 alias dirsize="du -sh" # Show the size of a file/directory
+alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy" # Copy SSH key
 
 # Laravel
 alias homestead='function __homestead() { (cd ~/Homestead && vagrant $*); unset -f __homestead; }; __homestead' # homestead: Vagrant shortcut
