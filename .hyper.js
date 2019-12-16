@@ -38,7 +38,6 @@ module.exports = {
   plugins: [
     'hypercwd',
     'hyper-simple-highlight-active-session',
-    'hyper-statusline',
     'hyper-snazzy',
   ],
 
