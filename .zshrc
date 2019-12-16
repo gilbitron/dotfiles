@@ -83,5 +83,3 @@ if [ -f ~/.bashrc ]; then
    source ~/.bashrc
 fi
 
-autoload -U promptinit; promptinit
-prompt pure
