@@ -3,7 +3,8 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 # Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 # Python
-export PATH="$HOME/Library/Python/2.7/bin:$PATH"
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+export PATH="$HOME/Library/Python/3.7/bin:$PATH"
 
 # Load aliases
 if [ -f ~/.bash_aliases ]; then
