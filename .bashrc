@@ -11,6 +11,11 @@ if [ -f ~/.bash_aliases ]; then
 . ~/.bash_aliases
 fi
 
+# https://github.com/dylanaraps/neofetch
+if hash neofetch 2>/dev/null; then
+    neofetch
+fi
+
 # makes new dir and jumps inside
 mcd() {
     mkdir -p "$1" && cd "$1"
