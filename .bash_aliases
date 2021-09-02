@@ -27,6 +27,7 @@ alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy" # Copy SSH key
 alias homestead='function __homestead() { (cd ~/Homestead && vagrant $*); unset -f __homestead; }; __homestead' # homestead: Vagrant shortcut
 alias artisan="php artisan"
 alias sail='bash vendor/bin/sail'
+alias vapor="php vendor/bin/vapor"
 
 #Gulp
 alias gw="gulp watch"
