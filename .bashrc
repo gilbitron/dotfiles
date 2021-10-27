@@ -1,3 +1,5 @@
+# Homebrew (Apple Silicon)
+export PATH="/opt/homebrew/bin:$PATH"
 # Composer
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 # Added by the Heroku Toolbelt
