@@ -39,10 +39,10 @@ ii() {
 
 # gitmd: git "merge and deploy"
 gitmd() {
-    git checkout master
+    git -c core.hooksPath=/dev/null checkout master
     git merge --no-edit develop
     git push
-    git checkout develop
+    git -c core.hooksPath=/dev/null checkout develop
 }
 
 # gitpurge: Delete local branches that have been deleted remotely
