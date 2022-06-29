@@ -1,3 +1,6 @@
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/bashrc.pre.bash" ]] && . "$HOME/.fig/shell/bashrc.pre.bash"
+
 # Homebrew (Apple Silicon)
 export PATH="/opt/homebrew/bin:$PATH"
 # Composer
@@ -47,3 +50,6 @@ gitpurge() {
     git checkout develop
     git branch --merged | grep -v "\*" | grep -v "master" | xargs -n 1 git branch -d
 }
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/bashrc.post.bash" ]] && . "$HOME/.fig/shell/bashrc.post.bash"
