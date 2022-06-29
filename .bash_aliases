@@ -28,6 +28,4 @@ alias homestead='function __homestead() { (cd ~/Homestead && vagrant $*); unset 
 alias artisan="php artisan"
 alias sail='bash vendor/bin/sail'
 alias vapor="php vendor/bin/vapor"
-
-#Gulp
-alias gw="gulp watch"
+alias jigsaw="php vendor/bin/jigsaw"
