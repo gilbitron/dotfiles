@@ -29,7 +29,3 @@ alias artisan="php artisan"
 alias sail="bash vendor/bin/sail"
 alias vapor="php vendor/bin/vapor"
 alias jigsaw="php vendor/bin/jigsaw"
-
-# Ni
-alias npm="echo 'Using ni instead of npm...\n' && ni"
-alias yarn="echo 'Using ni instead of yarn...\n' && ni"
