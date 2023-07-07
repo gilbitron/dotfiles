@@ -45,33 +45,27 @@ link_file () {
 
       else
 
-        if [[ $- == *i* ]]
-          # Non-interactive mode
-          backup_all=true
-        then
+        #user "File already exists: $dst ($(basename "$src")), what do you want to do?\n\
+        #[s]kip, [S]kip all, [o]verwrite, [O]verwrite all, [b]ackup, [B]ackup all?"
+        #read -n 1 action
 
-          user "File already exists: $dst ($(basename "$src")), what do you want to do?\n\
-          [s]kip, [S]kip all, [o]verwrite, [O]verwrite all, [b]ackup, [B]ackup all?"
-          read -n 1 action
-
-          case "$action" in
-            o )
-              overwrite=true;;
-            O )
-              overwrite_all=true;;
-            b )
-              backup=true;;
-            B )
-              backup_all=true;;
-            s )
-              skip=true;;
-            S )
-              skip_all=true;;
-            * )
-              ;;
-          esac
-
-        fi
+        #case "$action" in
+        #  o )
+        #    overwrite=true;;
+        #  O )
+        #    overwrite_all=true;;
+        #  b )
+        #    backup=true;;
+        #  B )
+        #    backup_all=true;;
+        #  s )
+        #    skip=true;;
+        #  S )
+        #    skip_all=true;;
+        #  * )
+        #    ;;
+        #esac
+        backup=true;
 
       fi
 
