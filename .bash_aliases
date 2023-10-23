@@ -24,7 +24,7 @@ alias wifidns="networksetup -setdnsservers Wi-Fi 8.8.8.8 8.8.1.1"              #
 alias wifidnsclear="networksetup -setdnsservers Wi-Fi empty"                   # Clear WiFi DNS
 
 # Laravel
-alias com = "composer"
+alias com="composer"
 alias homestead='function __homestead() { (cd ~/Homestead && vagrant $*); unset -f __homestead; }; __homestead'
 alias artisan="php artisan"
 alias sail="bash vendor/bin/sail"
