@@ -25,7 +25,7 @@ alias wifidnsclear="networksetup -setdnsservers Wi-Fi empty"                   #
 
 # Laravel
 alias com="composer"
-alias homestead='function __homestead() { (cd ~/Homestead && vagrant $*); unset -f __homestead; }; __homestead'
+alias art="php artisan"
 alias artisan="php artisan"
 alias sail="bash vendor/bin/sail"
 alias vapor="php vendor/bin/vapor"
