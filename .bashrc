@@ -7,6 +7,8 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # Python
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 export PATH="$HOME/Library/Python/3.7/bin:$PATH"
+# MySQL
+export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
 
 # Load aliases
 if [ -f ~/.bash_aliases ]; then
