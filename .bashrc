@@ -1,14 +1,11 @@
-# Homebrew (Apple Silicon)
+# Homebrew
 export PATH="/opt/homebrew/bin:$PATH"
+# Python
+export PATH=$(brew --prefix python)"/libexec/bin:$PATH"
+# MySQL
+export PATH=$(brew --prefix mysql-client)"/bin:$PATH"
 # Composer
 export PATH="$HOME/.composer/vendor/bin:$PATH"
-# Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-# Python
-export PATH="/usr/local/opt/python/libexec/bin:$PATH"
-export PATH="$HOME/Library/Python/3.7/bin:$PATH"
-# MySQL
-export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
 
 # Load aliases
 if [ -f ~/.bash_aliases ]; then
