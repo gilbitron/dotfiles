@@ -52,7 +52,7 @@ export DISABLE_AUTO_TITLE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git extract vagrant)
+plugins=(git extract vagrant zsh-syntax-highlighting zsh-autosuggestions)
 
 # User configuration
 
@@ -89,10 +89,6 @@ source $ZSH/oh-my-zsh.sh
 if [ -f ~/.bashrc ]; then
    source ~/.bashrc
 fi
-
-source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
