@@ -1,15 +1,10 @@
-# Homebrew
-export PATH="/opt/homebrew/bin:$PATH"
-# Python
-export PATH=$(brew --prefix python)"/libexec/bin:$PATH"
-# MySQL
-export PATH=$(brew --prefix mysql-client)"/bin:$PATH"
-# Composer
-export PATH="$HOME/.composer/vendor/bin:$PATH"
-
+# Source .bashrc_local
+if [ -f ~/.bashrc_local ]; then
+    . ~/.bashrc_local
+fi
 # Load aliases
 if [ -f ~/.bash_aliases ]; then
-. ~/.bash_aliases
+    . ~/.bash_aliases
 fi
 
 # https://github.com/dylanaraps/neofetch
