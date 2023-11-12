@@ -120,6 +120,11 @@ install_dotfiles
 info "Configuring .gitignore_global..."
 git config --global core.excludesfile ~/.gitignore_global
 
+if [ ! -d "$HOME/.oh-my-zsh" ]; then
+  info "Installing oh-my-zsh..."
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+fi
+
 if [ ! -d ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}"/plugins/zsh-syntax-highlighting" ]; then
   info "Installing zsh-syntax-highlighting..."
   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
