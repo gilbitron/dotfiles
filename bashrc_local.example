@@ -2,6 +2,8 @@
 
 # Homebrew
 export PATH="/opt/homebrew/bin:$PATH"
+# Laravel Herd
+export PATH="/Users/gilbitron/Library/Application Support/Herd/bin:$PATH"
 # Python
 export PATH=$(brew --prefix python)"/libexec/bin:$PATH"
 # MySQL
