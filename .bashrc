@@ -31,8 +31,7 @@ ii() {
 # gitmd: git "merge and deploy"
 gitmd() {
     git -c core.hooksPath=/dev/null checkout master
-    git -c core.hooksPath=/dev/null merge --squash develop
-    git -c core.hooksPath=/dev/null commit -m "Merge branch 'develop' into master"
+    git -c core.hooksPath=/dev/null merge --no-edit develop
     git -c core.hooksPath=/dev/null push
     git -c core.hooksPath=/dev/null checkout develop
 }
@@ -40,8 +39,7 @@ gitmd() {
 # gitmdm: git "merge and deploy" main branch
 gitmdm() {
     git -c core.hooksPath=/dev/null checkout main
-    git -c core.hooksPath=/dev/null merge --squash develop
-    git -c core.hooksPath=/dev/null commit -m "Merge branch 'develop' into main"
+    git -c core.hooksPath=/dev/null merge --no-edit develop
     git -c core.hooksPath=/dev/null push
     git -c core.hooksPath=/dev/null checkout develop
 }
