@@ -23,6 +23,9 @@ alias flushdns="sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder;" #
 alias wifidns="networksetup -setdnsservers Wi-Fi 8.8.8.8 8.8.1.1"              # Set WiFi DNS to Google DNS servers
 alias wifidnsclear="networksetup -setdnsservers Wi-Fi empty"                   # Clear WiFi DNS
 
+# JS
+alias pn="pnpm"
+
 # Laravel
 alias com="composer"
 alias art="php artisan"
